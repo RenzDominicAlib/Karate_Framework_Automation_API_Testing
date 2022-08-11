@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[1:9]","start":1660135370084,"end":1660135370472,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[1:9] 20:42:50.084-20:42:50.472 Read json's files - Using * def + varName"},{"id":2,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[2:20]","start":1660135370483,"end":1660135370501,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[2:20] 20:42:50.483-20:42:50.501 Read json's files - Using * json + varName"},{"id":3,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[3:30]","start":1660135370509,"end":1660135370702,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[3:30] 20:42:50.509-20:42:50.702 Read XML files \/ converting format"},{"id":4,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[4:38]","start":1660135370711,"end":1660135370755,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[4:38] 20:42:50.711-20:42:50.755 Read XML files \/ DIRECT convert"},{"id":5,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[5:46]","start":1660135370762,"end":1660135371807,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[5:46] 20:42:50.762-20:42:51.807 Iteration of Response JSON format - simplified - using BC"},{"id":6,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[6:53]","start":1660135371813,"end":1660135372158,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[6:53] 20:42:51.813-20:42:52.158 Iteration of Response JSON format - simplified - NOT using BC"},{"id":7,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[7:63]","start":1660135372163,"end":1660135372419,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[7:63] 20:42:52.163-20:42:52.419 Read Java files \/ data generator, Static Java Functions"},{"id":8,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[8:72]","start":1660135372425,"end":1660135372476,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[8:72] 20:42:52.425-20:42:52.476 Read Java files \/ calling Static and Non-Static Java functions"},{"id":9,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[9:90]","start":1660135372480,"end":1660135372487,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[9:90] 20:42:52.480-20:42:52.487 Create\/Write new txt file using java functions"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.SamplePackage1.scenarios.activity_1.Validation_of_list_of_users_in_reqres</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-08-05 09:27:54 am</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Validation_of_list_of_users_in_reqres</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validation_of_list_of_users_in_reqres</span>
+          <span class="feature-description">Description: List of users in Reqres.in sample website (used env: &#39;default&#39;)</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Validation_of_list_of_users_in_reqres</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>url p_base_url</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">09:27:54.853 src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:7
+* url p_base_url
+&gt;&gt; src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:20 Expected ; but found :
+   config.p_base_url: &#39;https://reqres.in&#39;;
+                    ^
+Unnamed:15:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:17:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:20 Expected ; but found :
+   config.p_base_url: &#39;https://reqres.in&#39;;
+                    ^
+Unnamed:15:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:17:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">09:27:54.854 src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:11
+Given path &#39;/api/users&#39;
+&gt;&gt; src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:20 Expected ; but found :
+   config.p_base_url: &#39;https://reqres.in&#39;;
+                    ^
+Unnamed:15:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:17:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:20 Expected ; but found :
+   config.p_base_url: &#39;https://reqres.in&#39;;
+                    ^
+Unnamed:15:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:17:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:7
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>param page = 2</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">09:27:54.854 src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:12
+Given param page = 2
+&gt;&gt; src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:20 Expected ; but found :
+   config.p_base_url: &#39;https://reqres.in&#39;;
+                    ^
+Unnamed:15:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:17:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:20 Expected ; but found :
+   config.p_base_url: &#39;https://reqres.in&#39;;
+                    ^
+Unnamed:15:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:17:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:7
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:11
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref failed">13</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">09:27:54.855 src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:13
+When method Get
+&gt;&gt; src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:20 Expected ; but found :
+   config.p_base_url: &#39;https://reqres.in&#39;;
+                    ^
+Unnamed:15:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:17:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:20 Expected ; but found :
+   config.p_base_url: &#39;https://reqres.in&#39;;
+                    ^
+Unnamed:15:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:17:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:7
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:11
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:12
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">09:27:54.855 src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:14
+* print response
+&gt;&gt; src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:20 Expected ; but found :
+   config.p_base_url: &#39;https://reqres.in&#39;;
+                    ^
+Unnamed:15:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:17:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;default&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     p_base_url: &#39;&#39;
+10:   }
+11:   if (env == &#39;default&#39;) {
+12:    config.p_base_url: &#39;https://reqres.in&#39;;
+13:     // customize
+14: 
+15:   } else if (env == &#39;e2e&#39;) {
+16:     // customize
+17:   }
+18:   return config;
+19: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:20 Expected ; but found :
+   config.p_base_url: &#39;https://reqres.in&#39;;
+                    ^
+Unnamed:15:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:17:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:230)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1254)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:286)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:369)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:395)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+- java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:7
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:11
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:12
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:13
+src/test/java/SamplePackage1/scenarios/activity_1/Validation_of_list_of_users_in_reqres.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

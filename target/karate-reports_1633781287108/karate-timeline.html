@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/SamplePackage1\/features\/SampleDataDrivenScenario[1.1:28]","start":1633781183771,"end":1633781185366,"title":"src\/test\/java\/SamplePackage1\/features\/SampleDataDrivenScenario[1.1:28] 20:06:23.771-20:06:25.366 ALWAYS adjust the email, uname and title"},{"id":2,"group":1,"content":"src\/test\/java\/SamplePackage1\/features\/SampleDataDrivenScenario[1.2:29]","start":1633781185373,"end":1633781186114,"title":"src\/test\/java\/SamplePackage1\/features\/SampleDataDrivenScenario[1.2:29] 20:06:25.373-20:06:26.114 ALWAYS adjust the email, uname and title"},{"id":3,"group":1,"content":"src\/test\/java\/SamplePackage1\/features\/SampleDataDrivenScenario[1.3:33]","start":1633781186121,"end":1633781186804,"title":"src\/test\/java\/SamplePackage1\/features\/SampleDataDrivenScenario[1.3:33] 20:06:26.121-20:06:26.804 ALWAYS adjust the email, uname and title"},{"id":4,"group":1,"content":"src\/test\/java\/SamplePackage1\/features\/SampleDataDrivenScenario[1.4:34]","start":1633781186810,"end":1633781187494,"title":"src\/test\/java\/SamplePackage1\/features\/SampleDataDrivenScenario[1.4:34] 20:06:26.810-20:06:27.494 ALWAYS adjust the email, uname and title"},{"id":5,"group":1,"content":"src\/test\/java\/SamplePackage1\/features\/SampleDataDrivenScenario[1.5:35]","start":1633781187500,"end":1633781188153,"title":"src\/test\/java\/SamplePackage1\/features\/SampleDataDrivenScenario[1.5:35] 20:06:27.500-20:06:28.153 ALWAYS adjust the email, uname and title"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

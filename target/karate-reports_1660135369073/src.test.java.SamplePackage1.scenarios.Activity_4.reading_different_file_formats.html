@@ -1,0 +1,4594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.SamplePackage1.scenarios.Activity_4.reading_different_file_formats</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">8</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-08-10 08:34:08 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Read json&#39;s files - Using * def + varName</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:20]"><span>[2:20]</span> <span>Read json&#39;s files - Using * json + varName</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:30]"><span>[3:30]</span> <span>Read XML files / converting format</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:38]"><span>[4:38]</span> <span>Read XML files / DIRECT convert</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:46]"><span>[5:46]</span> <span>Iteration of Response JSON format - simplified - using BC</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:53]"><span>[6:53]</span> <span>Iteration of Response JSON format - simplified - NOT using BC</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:63]"><span>[7:63]</span> <span>Read Java files / data generator, Static Java Functions</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:72]"><span>[8:72]</span> <span>Read Java files / calling Static and Non-Static Java functions</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/SamplePackage1/scenarios/Activity_4/reading_different_file_formats.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">reading_different_file_formats</span>
+          <span class="feature-description">Description: Ways to read different file format using feature file</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Read json&#39;s files - Using * def + varName</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>96</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ENVIRONMENT = env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">20:34:06.843 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ListUsers = read(&#39;classpath:SamplePackage1/reusableBC/Activity_4_helper/api_list_users.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">71</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ListUsers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">20:34:06.969 [print] {
+  &quot;page&quot;: 2,
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;total_pages&quot;: 2,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 7,
+      &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Michael&quot;,
+      &quot;last_name&quot;: &quot;Lawson&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 8,
+      &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Lindsay&quot;,
+      &quot;last_name&quot;: &quot;Ferguson&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 9,
+      &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Tobias&quot;,
+      &quot;last_name&quot;: &quot;Funke&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 10,
+      &quot;email&quot;: &quot;byron.fields@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Byron&quot;,
+      &quot;last_name&quot;: &quot;Fields&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 11,
+      &quot;email&quot;: &quot;george.edwards@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;George&quot;,
+      &quot;last_name&quot;: &quot;Edwards&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 12,
+      &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Rachel&quot;,
+      &quot;last_name&quot;: &quot;Howell&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;
+    }
+  ],
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ListUsers.page</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">20:34:06.971 [print] 2 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ListUsers.data[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">20:34:06.977 [print] {
+  &quot;id&quot;: 7,
+  &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;,
+  &quot;first_name&quot;: &quot;Michael&quot;,
+  &quot;last_name&quot;: &quot;Lawson&quot;,
+  &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ListUsers.data[1].email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">20:34:06.979 [print] lindsay.ferguson@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set ListUsers.newObject = &#39;Im a new object&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set ListUsers.data[*].addedObject = &#39;Im a new ADDED object&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ListUsers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">20:34:06.987 [print] {
+  &quot;page&quot;: 2,
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;total_pages&quot;: 2,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 7,
+      &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Michael&quot;,
+      &quot;last_name&quot;: &quot;Lawson&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
+      &quot;addedObject&quot;: &quot;Im a new ADDED object&quot;
+    },
+    {
+      &quot;id&quot;: 8,
+      &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Lindsay&quot;,
+      &quot;last_name&quot;: &quot;Ferguson&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;,
+      &quot;addedObject&quot;: &quot;Im a new ADDED object&quot;
+    },
+    {
+      &quot;id&quot;: 9,
+      &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Tobias&quot;,
+      &quot;last_name&quot;: &quot;Funke&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;,
+      &quot;addedObject&quot;: &quot;Im a new ADDED object&quot;
+    },
+    {
+      &quot;id&quot;: 10,
+      &quot;email&quot;: &quot;byron.fields@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Byron&quot;,
+      &quot;last_name&quot;: &quot;Fields&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;,
+      &quot;addedObject&quot;: &quot;Im a new ADDED object&quot;
+    },
+    {
+      &quot;id&quot;: 11,
+      &quot;email&quot;: &quot;george.edwards@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;George&quot;,
+      &quot;last_name&quot;: &quot;Edwards&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;,
+      &quot;addedObject&quot;: &quot;Im a new ADDED object&quot;
+    },
+    {
+      &quot;id&quot;: 12,
+      &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Rachel&quot;,
+      &quot;last_name&quot;: &quot;Howell&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;,
+      &quot;addedObject&quot;: &quot;Im a new ADDED object&quot;
+    }
+  ],
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+  },
+  &quot;newObject&quot;: &quot;Im a new object&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:20]</span>
+                <span class="scenario-name">Read json&#39;s files - Using * json + varName</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>16</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ENVIRONMENT = env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">20:34:06.996 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json ListUsersJson = read(&#39;classpath:SamplePackage1/reusableBC/Activity_4_helper/api_list_users.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ListUsersJson</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">20:34:07.005 [print] {
+  &quot;page&quot;: 2,
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;total_pages&quot;: 2,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 7,
+      &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Michael&quot;,
+      &quot;last_name&quot;: &quot;Lawson&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 8,
+      &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Lindsay&quot;,
+      &quot;last_name&quot;: &quot;Ferguson&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 9,
+      &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Tobias&quot;,
+      &quot;last_name&quot;: &quot;Funke&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 10,
+      &quot;email&quot;: &quot;byron.fields@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Byron&quot;,
+      &quot;last_name&quot;: &quot;Fields&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 11,
+      &quot;email&quot;: &quot;george.edwards@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;George&quot;,
+      &quot;last_name&quot;: &quot;Edwards&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 12,
+      &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Rachel&quot;,
+      &quot;last_name&quot;: &quot;Howell&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;
+    }
+  ],
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ListUsersJson.page</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">20:34:07.008 [print] 2 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ListUsersJson.data[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">20:34:07.011 [print] {
+  &quot;id&quot;: 7,
+  &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;,
+  &quot;first_name&quot;: &quot;Michael&quot;,
+  &quot;last_name&quot;: &quot;Lawson&quot;,
+  &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ListUsersJson.data[1].email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">20:34:07.013 [print] lindsay.ferguson@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set ListUsersJson.newObject = &#39;Im a new object&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set ListUsersJson.data[*].addedObject = &#39;Im a new ADDED object&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ListUsersJson</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">20:34:07.018 [print] {
+  &quot;page&quot;: 2,
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;total_pages&quot;: 2,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 7,
+      &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Michael&quot;,
+      &quot;last_name&quot;: &quot;Lawson&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
+      &quot;addedObject&quot;: &quot;Im a new ADDED object&quot;
+    },
+    {
+      &quot;id&quot;: 8,
+      &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Lindsay&quot;,
+      &quot;last_name&quot;: &quot;Ferguson&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;,
+      &quot;addedObject&quot;: &quot;Im a new ADDED object&quot;
+    },
+    {
+      &quot;id&quot;: 9,
+      &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Tobias&quot;,
+      &quot;last_name&quot;: &quot;Funke&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;,
+      &quot;addedObject&quot;: &quot;Im a new ADDED object&quot;
+    },
+    {
+      &quot;id&quot;: 10,
+      &quot;email&quot;: &quot;byron.fields@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Byron&quot;,
+      &quot;last_name&quot;: &quot;Fields&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;,
+      &quot;addedObject&quot;: &quot;Im a new ADDED object&quot;
+    },
+    {
+      &quot;id&quot;: 11,
+      &quot;email&quot;: &quot;george.edwards@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;George&quot;,
+      &quot;last_name&quot;: &quot;Edwards&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;,
+      &quot;addedObject&quot;: &quot;Im a new ADDED object&quot;
+    },
+    {
+      &quot;id&quot;: 12,
+      &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Rachel&quot;,
+      &quot;last_name&quot;: &quot;Howell&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;,
+      &quot;addedObject&quot;: &quot;Im a new ADDED object&quot;
+    }
+  ],
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+  },
+  &quot;newObject&quot;: &quot;Im a new object&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:30]</span>
+                <span class="scenario-name">Read XML files / converting format</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>190</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:30]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ENVIRONMENT = env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">20:34:07.026 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sampleXml = read(&#39;classpath:SamplePackage1/reusableBC/Activity_4_helper/sample_XML_file.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print sampleXml</span>
+      </div>
+    </div>
+    <div class="time-cell passed">104</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">20:34:07.153 [print] &lt;catalog&gt;
+  &lt;book id=&quot;bk101&quot;&gt;
+    &lt;author&gt;Gambardella, Matthew&lt;/author&gt;
+    &lt;title&gt;XML Developer&#39;s Guide&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;44.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-10-01&lt;/publish_date&gt;
+    &lt;description&gt;An in-depth look at creating applications with XML.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk102&quot;&gt;
+    &lt;author&gt;Ralls, Kim&lt;/author&gt;
+    &lt;title&gt;Midnight Rain&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-16&lt;/publish_date&gt;
+    &lt;description&gt;A former architect battles corporate zombies,
+            an evil sorceress, and her own childhood to become queen
+            of the world.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk103&quot;&gt;
+    &lt;author&gt;Corets, Eva&lt;/author&gt;
+    &lt;title&gt;Maeve Ascendant&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-11-17&lt;/publish_date&gt;
+    &lt;description&gt;After the collapse of a nanotechnology
+            society in England, the young survivors lay the
+            foundation for a new society.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk104&quot;&gt;
+    &lt;author&gt;Corets, Eva&lt;/author&gt;
+    &lt;title&gt;Oberon&#39;s Legacy&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2001-03-10&lt;/publish_date&gt;
+    &lt;description&gt;In post-apocalypse England, the mysterious
+            agent known only as Oberon helps to create a new life
+            for the inhabitants of London. Sequel to Maeve
+            Ascendant.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk105&quot;&gt;
+    &lt;author&gt;Corets, Eva&lt;/author&gt;
+    &lt;title&gt;The Sundered Grail&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2001-09-10&lt;/publish_date&gt;
+    &lt;description&gt;The two daughters of Maeve, half-sisters,
+            battle one another for control of England. Sequel to
+            Oberon&#39;s Legacy.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk106&quot;&gt;
+    &lt;author&gt;Randall, Cynthia&lt;/author&gt;
+    &lt;title&gt;Lover Birds&lt;/title&gt;
+    &lt;genre&gt;Romance&lt;/genre&gt;
+    &lt;price&gt;4.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-09-02&lt;/publish_date&gt;
+    &lt;description&gt;When Carla meets Paul at an ornithology
+            conference, tempers fly as feathers get ruffled.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk107&quot;&gt;
+    &lt;author&gt;Thurman, Paula&lt;/author&gt;
+    &lt;title&gt;Splish Splash&lt;/title&gt;
+    &lt;genre&gt;Romance&lt;/genre&gt;
+    &lt;price&gt;4.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-11-02&lt;/publish_date&gt;
+    &lt;description&gt;A deep sea diver finds true love twenty
+            thousand leagues beneath the sea.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk108&quot;&gt;
+    &lt;author&gt;Knorr, Stefan&lt;/author&gt;
+    &lt;title&gt;Creepy Crawlies&lt;/title&gt;
+    &lt;genre&gt;Horror&lt;/genre&gt;
+    &lt;price&gt;4.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-06&lt;/publish_date&gt;
+    &lt;description&gt;An anthology of horror stories about roaches,
+            centipedes, scorpions  and other insects.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk109&quot;&gt;
+    &lt;author&gt;Kress, Peter&lt;/author&gt;
+    &lt;title&gt;Paradox Lost&lt;/title&gt;
+    &lt;genre&gt;Science Fiction&lt;/genre&gt;
+    &lt;price&gt;6.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-11-02&lt;/publish_date&gt;
+    &lt;description&gt;After an inadvertant trip through a Heisenberg
+            Uncertainty Device, James Salway discovers the problems
+            of being quantum.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk110&quot;&gt;
+    &lt;author&gt;O&#39;Brien, Tim&lt;/author&gt;
+    &lt;title&gt;Microsoft .NET: The Programming Bible&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;36.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-09&lt;/publish_date&gt;
+    &lt;description&gt;Microsoft&#39;s .NET initiative is explored in
+            detail in this deep programmer&#39;s reference.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk111&quot;&gt;
+    &lt;author&gt;O&#39;Brien, Tim&lt;/author&gt;
+    &lt;title&gt;MSXML3: A Comprehensive Guide&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;36.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-01&lt;/publish_date&gt;
+    &lt;description&gt;The Microsoft MSXML3 parser is covered in
+            detail, with attention to XML DOM interfaces, XSLT processing,
+            SAX and more.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk112&quot;&gt;
+    &lt;author&gt;Galos, Mike&lt;/author&gt;
+    &lt;title&gt;Visual Studio 7: A Comprehensive Guide&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;49.95&lt;/price&gt;
+    &lt;publish_date&gt;2001-04-16&lt;/publish_date&gt;
+    &lt;description&gt;Microsoft Visual Studio 7 is explored in depth,
+            looking at how Visual Basic, Visual C++, C#, and ASP+ are
+            integrated into a comprehensive development
+            environment.&lt;/description&gt;
+  &lt;/book&gt;
+&lt;/catalog&gt;
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set sampleXml /catalog/books/author = &#39;Jose Ibarra&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print sampleXml</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">20:34:07.191 [print] &lt;catalog&gt;
+  &lt;book id=&quot;bk101&quot;&gt;
+    &lt;author&gt;Gambardella, Matthew&lt;/author&gt;
+    &lt;title&gt;XML Developer&#39;s Guide&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;44.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-10-01&lt;/publish_date&gt;
+    &lt;description&gt;An in-depth look at creating applications with XML.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk102&quot;&gt;
+    &lt;author&gt;Ralls, Kim&lt;/author&gt;
+    &lt;title&gt;Midnight Rain&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-16&lt;/publish_date&gt;
+    &lt;description&gt;A former architect battles corporate zombies,
+            an evil sorceress, and her own childhood to become queen
+            of the world.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk103&quot;&gt;
+    &lt;author&gt;Corets, Eva&lt;/author&gt;
+    &lt;title&gt;Maeve Ascendant&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-11-17&lt;/publish_date&gt;
+    &lt;description&gt;After the collapse of a nanotechnology
+            society in England, the young survivors lay the
+            foundation for a new society.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk104&quot;&gt;
+    &lt;author&gt;Corets, Eva&lt;/author&gt;
+    &lt;title&gt;Oberon&#39;s Legacy&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2001-03-10&lt;/publish_date&gt;
+    &lt;description&gt;In post-apocalypse England, the mysterious
+            agent known only as Oberon helps to create a new life
+            for the inhabitants of London. Sequel to Maeve
+            Ascendant.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk105&quot;&gt;
+    &lt;author&gt;Corets, Eva&lt;/author&gt;
+    &lt;title&gt;The Sundered Grail&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2001-09-10&lt;/publish_date&gt;
+    &lt;description&gt;The two daughters of Maeve, half-sisters,
+            battle one another for control of England. Sequel to
+            Oberon&#39;s Legacy.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk106&quot;&gt;
+    &lt;author&gt;Randall, Cynthia&lt;/author&gt;
+    &lt;title&gt;Lover Birds&lt;/title&gt;
+    &lt;genre&gt;Romance&lt;/genre&gt;
+    &lt;price&gt;4.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-09-02&lt;/publish_date&gt;
+    &lt;description&gt;When Carla meets Paul at an ornithology
+            conference, tempers fly as feathers get ruffled.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk107&quot;&gt;
+    &lt;author&gt;Thurman, Paula&lt;/author&gt;
+    &lt;title&gt;Splish Splash&lt;/title&gt;
+    &lt;genre&gt;Romance&lt;/genre&gt;
+    &lt;price&gt;4.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-11-02&lt;/publish_date&gt;
+    &lt;description&gt;A deep sea diver finds true love twenty
+            thousand leagues beneath the sea.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk108&quot;&gt;
+    &lt;author&gt;Knorr, Stefan&lt;/author&gt;
+    &lt;title&gt;Creepy Crawlies&lt;/title&gt;
+    &lt;genre&gt;Horror&lt;/genre&gt;
+    &lt;price&gt;4.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-06&lt;/publish_date&gt;
+    &lt;description&gt;An anthology of horror stories about roaches,
+            centipedes, scorpions  and other insects.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk109&quot;&gt;
+    &lt;author&gt;Kress, Peter&lt;/author&gt;
+    &lt;title&gt;Paradox Lost&lt;/title&gt;
+    &lt;genre&gt;Science Fiction&lt;/genre&gt;
+    &lt;price&gt;6.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-11-02&lt;/publish_date&gt;
+    &lt;description&gt;After an inadvertant trip through a Heisenberg
+            Uncertainty Device, James Salway discovers the problems
+            of being quantum.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk110&quot;&gt;
+    &lt;author&gt;O&#39;Brien, Tim&lt;/author&gt;
+    &lt;title&gt;Microsoft .NET: The Programming Bible&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;36.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-09&lt;/publish_date&gt;
+    &lt;description&gt;Microsoft&#39;s .NET initiative is explored in
+            detail in this deep programmer&#39;s reference.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk111&quot;&gt;
+    &lt;author&gt;O&#39;Brien, Tim&lt;/author&gt;
+    &lt;title&gt;MSXML3: A Comprehensive Guide&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;36.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-01&lt;/publish_date&gt;
+    &lt;description&gt;The Microsoft MSXML3 parser is covered in
+            detail, with attention to XML DOM interfaces, XSLT processing,
+            SAX and more.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk112&quot;&gt;
+    &lt;author&gt;Galos, Mike&lt;/author&gt;
+    &lt;title&gt;Visual Studio 7: A Comprehensive Guide&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;49.95&lt;/price&gt;
+    &lt;publish_date&gt;2001-04-16&lt;/publish_date&gt;
+    &lt;description&gt;Microsoft Visual Studio 7 is explored in depth,
+            looking at how Visual Basic, Visual C++, C#, and ASP+ are
+            integrated into a comprehensive development
+            environment.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;books&gt;
+    &lt;author&gt;Jose Ibarra&lt;/author&gt;
+  &lt;/books&gt;
+&lt;/catalog&gt;
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def convertedFormat = call read(&#39;classpath:SamplePackage1/reusableBC/Activity_4_helper/converter_xml_to_json_format.feature&#39;) {var1: #(sampleXml)}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.35.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">SamplePackage1.reusableBC.Activity_4_helper.converter_xml_to_json_format</div>
+      </div>
+      <div class="time-cell passed">4</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.35.0.call">
+    <div class="step-container" id="0.35.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json convertedVar1 = var1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.35.0.call">
+    <div class="step-container" id="0.35.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print convertedVar1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35.0.call.0.6">20:34:07.212 [print] {
+  &quot;catalog&quot;: {
+    &quot;book&quot;: [
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Gambardella, Matthew&quot;,
+          &quot;title&quot;: &quot;XML Developer&#39;s Guide&quot;,
+          &quot;genre&quot;: &quot;Computer&quot;,
+          &quot;price&quot;: &quot;44.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-10-01&quot;,
+          &quot;description&quot;: &quot;An in-depth look at creating applications with XML.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk101&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Ralls, Kim&quot;,
+          &quot;title&quot;: &quot;Midnight Rain&quot;,
+          &quot;genre&quot;: &quot;Fantasy&quot;,
+          &quot;price&quot;: &quot;5.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-12-16&quot;,
+          &quot;description&quot;: &quot;A former architect battles corporate zombies,\n            an evil sorceress, and her own childhood to become queen\n            of the world.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk102&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Corets, Eva&quot;,
+          &quot;title&quot;: &quot;Maeve Ascendant&quot;,
+          &quot;genre&quot;: &quot;Fantasy&quot;,
+          &quot;price&quot;: &quot;5.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-11-17&quot;,
+          &quot;description&quot;: &quot;After the collapse of a nanotechnology\n            society in England, the young survivors lay the\n            foundation for a new society.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk103&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Corets, Eva&quot;,
+          &quot;title&quot;: &quot;Oberon&#39;s Legacy&quot;,
+          &quot;genre&quot;: &quot;Fantasy&quot;,
+          &quot;price&quot;: &quot;5.95&quot;,
+          &quot;publish_date&quot;: &quot;2001-03-10&quot;,
+          &quot;description&quot;: &quot;In post-apocalypse England, the mysterious\n            agent known only as Oberon helps to create a new life\n            for the inhabitants of London. Sequel to Maeve\n            Ascendant.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk104&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Corets, Eva&quot;,
+          &quot;title&quot;: &quot;The Sundered Grail&quot;,
+          &quot;genre&quot;: &quot;Fantasy&quot;,
+          &quot;price&quot;: &quot;5.95&quot;,
+          &quot;publish_date&quot;: &quot;2001-09-10&quot;,
+          &quot;description&quot;: &quot;The two daughters of Maeve, half-sisters,\n            battle one another for control of England. Sequel to\n            Oberon&#39;s Legacy.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk105&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Randall, Cynthia&quot;,
+          &quot;title&quot;: &quot;Lover Birds&quot;,
+          &quot;genre&quot;: &quot;Romance&quot;,
+          &quot;price&quot;: &quot;4.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-09-02&quot;,
+          &quot;description&quot;: &quot;When Carla meets Paul at an ornithology\n            conference, tempers fly as feathers get ruffled.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk106&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Thurman, Paula&quot;,
+          &quot;title&quot;: &quot;Splish Splash&quot;,
+          &quot;genre&quot;: &quot;Romance&quot;,
+          &quot;price&quot;: &quot;4.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-11-02&quot;,
+          &quot;description&quot;: &quot;A deep sea diver finds true love twenty\n            thousand leagues beneath the sea.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk107&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Knorr, Stefan&quot;,
+          &quot;title&quot;: &quot;Creepy Crawlies&quot;,
+          &quot;genre&quot;: &quot;Horror&quot;,
+          &quot;price&quot;: &quot;4.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-12-06&quot;,
+          &quot;description&quot;: &quot;An anthology of horror stories about roaches,\n            centipedes, scorpions  and other insects.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk108&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Kress, Peter&quot;,
+          &quot;title&quot;: &quot;Paradox Lost&quot;,
+          &quot;genre&quot;: &quot;Science Fiction&quot;,
+          &quot;price&quot;: &quot;6.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-11-02&quot;,
+          &quot;description&quot;: &quot;After an inadvertant trip through a Heisenberg\n            Uncertainty Device, James Salway discovers the problems\n            of being quantum.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk109&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;O&#39;Brien, Tim&quot;,
+          &quot;title&quot;: &quot;Microsoft .NET: The Programming Bible&quot;,
+          &quot;genre&quot;: &quot;Computer&quot;,
+          &quot;price&quot;: &quot;36.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-12-09&quot;,
+          &quot;description&quot;: &quot;Microsoft&#39;s .NET initiative is explored in\n            detail in this deep programmer&#39;s reference.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk110&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;O&#39;Brien, Tim&quot;,
+          &quot;title&quot;: &quot;MSXML3: A Comprehensive Guide&quot;,
+          &quot;genre&quot;: &quot;Computer&quot;,
+          &quot;price&quot;: &quot;36.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-12-01&quot;,
+          &quot;description&quot;: &quot;The Microsoft MSXML3 parser is covered in\n            detail, with attention to XML DOM interfaces, XSLT processing,\n            SAX and more.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk111&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Galos, Mike&quot;,
+          &quot;title&quot;: &quot;Visual Studio 7: A Comprehensive Guide&quot;,
+          &quot;genre&quot;: &quot;Computer&quot;,
+          &quot;price&quot;: &quot;49.95&quot;,
+          &quot;publish_date&quot;: &quot;2001-04-16&quot;,
+          &quot;description&quot;: &quot;Microsoft Visual Studio 7 is explored in depth,\n            looking at how Visual Basic, Visual C++, C#, and ASP+ are\n            integrated into a comprehensive development\n            environment.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk112&quot;
+        }
+      }
+    ],
+    &quot;books&quot;: {
+      &quot;author&quot;: &quot;Jose Ibarra&quot;
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print convertedFormat</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">20:34:07.220 [print] {
+  &quot;convertedVar1&quot;: {
+    &quot;catalog&quot;: {
+      &quot;book&quot;: [
+        {
+          &quot;_&quot;: {
+            &quot;author&quot;: &quot;Gambardella, Matthew&quot;,
+            &quot;title&quot;: &quot;XML Developer&#39;s Guide&quot;,
+            &quot;genre&quot;: &quot;Computer&quot;,
+            &quot;price&quot;: &quot;44.95&quot;,
+            &quot;publish_date&quot;: &quot;2000-10-01&quot;,
+            &quot;description&quot;: &quot;An in-depth look at creating applications with XML.&quot;
+          },
+          &quot;@&quot;: {
+            &quot;id&quot;: &quot;bk101&quot;
+          }
+        },
+        {
+          &quot;_&quot;: {
+            &quot;author&quot;: &quot;Ralls, Kim&quot;,
+            &quot;title&quot;: &quot;Midnight Rain&quot;,
+            &quot;genre&quot;: &quot;Fantasy&quot;,
+            &quot;price&quot;: &quot;5.95&quot;,
+            &quot;publish_date&quot;: &quot;2000-12-16&quot;,
+            &quot;description&quot;: &quot;A former architect battles corporate zombies,\n            an evil sorceress, and her own childhood to become queen\n            of the world.&quot;
+          },
+          &quot;@&quot;: {
+            &quot;id&quot;: &quot;bk102&quot;
+          }
+        },
+        {
+          &quot;_&quot;: {
+            &quot;author&quot;: &quot;Corets, Eva&quot;,
+            &quot;title&quot;: &quot;Maeve Ascendant&quot;,
+            &quot;genre&quot;: &quot;Fantasy&quot;,
+            &quot;price&quot;: &quot;5.95&quot;,
+            &quot;publish_date&quot;: &quot;2000-11-17&quot;,
+            &quot;description&quot;: &quot;After the collapse of a nanotechnology\n            society in England, the young survivors lay the\n            foundation for a new society.&quot;
+          },
+          &quot;@&quot;: {
+            &quot;id&quot;: &quot;bk103&quot;
+          }
+        },
+        {
+          &quot;_&quot;: {
+            &quot;author&quot;: &quot;Corets, Eva&quot;,
+            &quot;title&quot;: &quot;Oberon&#39;s Legacy&quot;,
+            &quot;genre&quot;: &quot;Fantasy&quot;,
+            &quot;price&quot;: &quot;5.95&quot;,
+            &quot;publish_date&quot;: &quot;2001-03-10&quot;,
+            &quot;description&quot;: &quot;In post-apocalypse England, the mysterious\n            agent known only as Oberon helps to create a new life\n            for the inhabitants of London. Sequel to Maeve\n            Ascendant.&quot;
+          },
+          &quot;@&quot;: {
+            &quot;id&quot;: &quot;bk104&quot;
+          }
+        },
+        {
+          &quot;_&quot;: {
+            &quot;author&quot;: &quot;Corets, Eva&quot;,
+            &quot;title&quot;: &quot;The Sundered Grail&quot;,
+            &quot;genre&quot;: &quot;Fantasy&quot;,
+            &quot;price&quot;: &quot;5.95&quot;,
+            &quot;publish_date&quot;: &quot;2001-09-10&quot;,
+            &quot;description&quot;: &quot;The two daughters of Maeve, half-sisters,\n            battle one another for control of England. Sequel to\n            Oberon&#39;s Legacy.&quot;
+          },
+          &quot;@&quot;: {
+            &quot;id&quot;: &quot;bk105&quot;
+          }
+        },
+        {
+          &quot;_&quot;: {
+            &quot;author&quot;: &quot;Randall, Cynthia&quot;,
+            &quot;title&quot;: &quot;Lover Birds&quot;,
+            &quot;genre&quot;: &quot;Romance&quot;,
+            &quot;price&quot;: &quot;4.95&quot;,
+            &quot;publish_date&quot;: &quot;2000-09-02&quot;,
+            &quot;description&quot;: &quot;When Carla meets Paul at an ornithology\n            conference, tempers fly as feathers get ruffled.&quot;
+          },
+          &quot;@&quot;: {
+            &quot;id&quot;: &quot;bk106&quot;
+          }
+        },
+        {
+          &quot;_&quot;: {
+            &quot;author&quot;: &quot;Thurman, Paula&quot;,
+            &quot;title&quot;: &quot;Splish Splash&quot;,
+            &quot;genre&quot;: &quot;Romance&quot;,
+            &quot;price&quot;: &quot;4.95&quot;,
+            &quot;publish_date&quot;: &quot;2000-11-02&quot;,
+            &quot;description&quot;: &quot;A deep sea diver finds true love twenty\n            thousand leagues beneath the sea.&quot;
+          },
+          &quot;@&quot;: {
+            &quot;id&quot;: &quot;bk107&quot;
+          }
+        },
+        {
+          &quot;_&quot;: {
+            &quot;author&quot;: &quot;Knorr, Stefan&quot;,
+            &quot;title&quot;: &quot;Creepy Crawlies&quot;,
+            &quot;genre&quot;: &quot;Horror&quot;,
+            &quot;price&quot;: &quot;4.95&quot;,
+            &quot;publish_date&quot;: &quot;2000-12-06&quot;,
+            &quot;description&quot;: &quot;An anthology of horror stories about roaches,\n            centipedes, scorpions  and other insects.&quot;
+          },
+          &quot;@&quot;: {
+            &quot;id&quot;: &quot;bk108&quot;
+          }
+        },
+        {
+          &quot;_&quot;: {
+            &quot;author&quot;: &quot;Kress, Peter&quot;,
+            &quot;title&quot;: &quot;Paradox Lost&quot;,
+            &quot;genre&quot;: &quot;Science Fiction&quot;,
+            &quot;price&quot;: &quot;6.95&quot;,
+            &quot;publish_date&quot;: &quot;2000-11-02&quot;,
+            &quot;description&quot;: &quot;After an inadvertant trip through a Heisenberg\n            Uncertainty Device, James Salway discovers the problems\n            of being quantum.&quot;
+          },
+          &quot;@&quot;: {
+            &quot;id&quot;: &quot;bk109&quot;
+          }
+        },
+        {
+          &quot;_&quot;: {
+            &quot;author&quot;: &quot;O&#39;Brien, Tim&quot;,
+            &quot;title&quot;: &quot;Microsoft .NET: The Programming Bible&quot;,
+            &quot;genre&quot;: &quot;Computer&quot;,
+            &quot;price&quot;: &quot;36.95&quot;,
+            &quot;publish_date&quot;: &quot;2000-12-09&quot;,
+            &quot;description&quot;: &quot;Microsoft&#39;s .NET initiative is explored in\n            detail in this deep programmer&#39;s reference.&quot;
+          },
+          &quot;@&quot;: {
+            &quot;id&quot;: &quot;bk110&quot;
+          }
+        },
+        {
+          &quot;_&quot;: {
+            &quot;author&quot;: &quot;O&#39;Brien, Tim&quot;,
+            &quot;title&quot;: &quot;MSXML3: A Comprehensive Guide&quot;,
+            &quot;genre&quot;: &quot;Computer&quot;,
+            &quot;price&quot;: &quot;36.95&quot;,
+            &quot;publish_date&quot;: &quot;2000-12-01&quot;,
+            &quot;description&quot;: &quot;The Microsoft MSXML3 parser is covered in\n            detail, with attention to XML DOM interfaces, XSLT processing,\n            SAX and more.&quot;
+          },
+          &quot;@&quot;: {
+            &quot;id&quot;: &quot;bk111&quot;
+          }
+        },
+        {
+          &quot;_&quot;: {
+            &quot;author&quot;: &quot;Galos, Mike&quot;,
+            &quot;title&quot;: &quot;Visual Studio 7: A Comprehensive Guide&quot;,
+            &quot;genre&quot;: &quot;Computer&quot;,
+            &quot;price&quot;: &quot;49.95&quot;,
+            &quot;publish_date&quot;: &quot;2001-04-16&quot;,
+            &quot;description&quot;: &quot;Microsoft Visual Studio 7 is explored in depth,\n            looking at how Visual Basic, Visual C++, C#, and ASP+ are\n            integrated into a comprehensive development\n            environment.&quot;
+          },
+          &quot;@&quot;: {
+            &quot;id&quot;: &quot;bk112&quot;
+          }
+        }
+      ],
+      &quot;books&quot;: {
+        &quot;author&quot;: &quot;Jose Ibarra&quot;
+      }
+    }
+  },
+  &quot;var1&quot;: &quot;[#document: null]&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:38]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:38]</span>
+                <span class="scenario-name">Read XML files / DIRECT convert</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>30</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:38]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ENVIRONMENT = env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">20:34:07.228 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sampleXml = read(&#39;classpath:SamplePackage1/reusableBC/Activity_4_helper/sample_XML_file.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print sampleXml</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.40">20:34:07.245 [print] &lt;catalog&gt;
+  &lt;book id=&quot;bk101&quot;&gt;
+    &lt;author&gt;Gambardella, Matthew&lt;/author&gt;
+    &lt;title&gt;XML Developer&#39;s Guide&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;44.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-10-01&lt;/publish_date&gt;
+    &lt;description&gt;An in-depth look at creating applications with XML.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk102&quot;&gt;
+    &lt;author&gt;Ralls, Kim&lt;/author&gt;
+    &lt;title&gt;Midnight Rain&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-16&lt;/publish_date&gt;
+    &lt;description&gt;A former architect battles corporate zombies,
+            an evil sorceress, and her own childhood to become queen
+            of the world.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk103&quot;&gt;
+    &lt;author&gt;Corets, Eva&lt;/author&gt;
+    &lt;title&gt;Maeve Ascendant&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-11-17&lt;/publish_date&gt;
+    &lt;description&gt;After the collapse of a nanotechnology
+            society in England, the young survivors lay the
+            foundation for a new society.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk104&quot;&gt;
+    &lt;author&gt;Corets, Eva&lt;/author&gt;
+    &lt;title&gt;Oberon&#39;s Legacy&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2001-03-10&lt;/publish_date&gt;
+    &lt;description&gt;In post-apocalypse England, the mysterious
+            agent known only as Oberon helps to create a new life
+            for the inhabitants of London. Sequel to Maeve
+            Ascendant.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk105&quot;&gt;
+    &lt;author&gt;Corets, Eva&lt;/author&gt;
+    &lt;title&gt;The Sundered Grail&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2001-09-10&lt;/publish_date&gt;
+    &lt;description&gt;The two daughters of Maeve, half-sisters,
+            battle one another for control of England. Sequel to
+            Oberon&#39;s Legacy.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk106&quot;&gt;
+    &lt;author&gt;Randall, Cynthia&lt;/author&gt;
+    &lt;title&gt;Lover Birds&lt;/title&gt;
+    &lt;genre&gt;Romance&lt;/genre&gt;
+    &lt;price&gt;4.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-09-02&lt;/publish_date&gt;
+    &lt;description&gt;When Carla meets Paul at an ornithology
+            conference, tempers fly as feathers get ruffled.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk107&quot;&gt;
+    &lt;author&gt;Thurman, Paula&lt;/author&gt;
+    &lt;title&gt;Splish Splash&lt;/title&gt;
+    &lt;genre&gt;Romance&lt;/genre&gt;
+    &lt;price&gt;4.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-11-02&lt;/publish_date&gt;
+    &lt;description&gt;A deep sea diver finds true love twenty
+            thousand leagues beneath the sea.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk108&quot;&gt;
+    &lt;author&gt;Knorr, Stefan&lt;/author&gt;
+    &lt;title&gt;Creepy Crawlies&lt;/title&gt;
+    &lt;genre&gt;Horror&lt;/genre&gt;
+    &lt;price&gt;4.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-06&lt;/publish_date&gt;
+    &lt;description&gt;An anthology of horror stories about roaches,
+            centipedes, scorpions  and other insects.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk109&quot;&gt;
+    &lt;author&gt;Kress, Peter&lt;/author&gt;
+    &lt;title&gt;Paradox Lost&lt;/title&gt;
+    &lt;genre&gt;Science Fiction&lt;/genre&gt;
+    &lt;price&gt;6.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-11-02&lt;/publish_date&gt;
+    &lt;description&gt;After an inadvertant trip through a Heisenberg
+            Uncertainty Device, James Salway discovers the problems
+            of being quantum.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk110&quot;&gt;
+    &lt;author&gt;O&#39;Brien, Tim&lt;/author&gt;
+    &lt;title&gt;Microsoft .NET: The Programming Bible&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;36.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-09&lt;/publish_date&gt;
+    &lt;description&gt;Microsoft&#39;s .NET initiative is explored in
+            detail in this deep programmer&#39;s reference.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk111&quot;&gt;
+    &lt;author&gt;O&#39;Brien, Tim&lt;/author&gt;
+    &lt;title&gt;MSXML3: A Comprehensive Guide&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;36.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-01&lt;/publish_date&gt;
+    &lt;description&gt;The Microsoft MSXML3 parser is covered in
+            detail, with attention to XML DOM interfaces, XSLT processing,
+            SAX and more.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk112&quot;&gt;
+    &lt;author&gt;Galos, Mike&lt;/author&gt;
+    &lt;title&gt;Visual Studio 7: A Comprehensive Guide&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;49.95&lt;/price&gt;
+    &lt;publish_date&gt;2001-04-16&lt;/publish_date&gt;
+    &lt;description&gt;Microsoft Visual Studio 7 is explored in depth,
+            looking at how Visual Basic, Visual C++, C#, and ASP+ are
+            integrated into a comprehensive development
+            environment.&lt;/description&gt;
+  &lt;/book&gt;
+&lt;/catalog&gt;
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set sampleXml /catalog/books/author = &#39;Jose Ibarra&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print sampleXml</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">20:34:07.258 [print] &lt;catalog&gt;
+  &lt;book id=&quot;bk101&quot;&gt;
+    &lt;author&gt;Gambardella, Matthew&lt;/author&gt;
+    &lt;title&gt;XML Developer&#39;s Guide&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;44.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-10-01&lt;/publish_date&gt;
+    &lt;description&gt;An in-depth look at creating applications with XML.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk102&quot;&gt;
+    &lt;author&gt;Ralls, Kim&lt;/author&gt;
+    &lt;title&gt;Midnight Rain&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-16&lt;/publish_date&gt;
+    &lt;description&gt;A former architect battles corporate zombies,
+            an evil sorceress, and her own childhood to become queen
+            of the world.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk103&quot;&gt;
+    &lt;author&gt;Corets, Eva&lt;/author&gt;
+    &lt;title&gt;Maeve Ascendant&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-11-17&lt;/publish_date&gt;
+    &lt;description&gt;After the collapse of a nanotechnology
+            society in England, the young survivors lay the
+            foundation for a new society.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk104&quot;&gt;
+    &lt;author&gt;Corets, Eva&lt;/author&gt;
+    &lt;title&gt;Oberon&#39;s Legacy&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2001-03-10&lt;/publish_date&gt;
+    &lt;description&gt;In post-apocalypse England, the mysterious
+            agent known only as Oberon helps to create a new life
+            for the inhabitants of London. Sequel to Maeve
+            Ascendant.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk105&quot;&gt;
+    &lt;author&gt;Corets, Eva&lt;/author&gt;
+    &lt;title&gt;The Sundered Grail&lt;/title&gt;
+    &lt;genre&gt;Fantasy&lt;/genre&gt;
+    &lt;price&gt;5.95&lt;/price&gt;
+    &lt;publish_date&gt;2001-09-10&lt;/publish_date&gt;
+    &lt;description&gt;The two daughters of Maeve, half-sisters,
+            battle one another for control of England. Sequel to
+            Oberon&#39;s Legacy.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk106&quot;&gt;
+    &lt;author&gt;Randall, Cynthia&lt;/author&gt;
+    &lt;title&gt;Lover Birds&lt;/title&gt;
+    &lt;genre&gt;Romance&lt;/genre&gt;
+    &lt;price&gt;4.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-09-02&lt;/publish_date&gt;
+    &lt;description&gt;When Carla meets Paul at an ornithology
+            conference, tempers fly as feathers get ruffled.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk107&quot;&gt;
+    &lt;author&gt;Thurman, Paula&lt;/author&gt;
+    &lt;title&gt;Splish Splash&lt;/title&gt;
+    &lt;genre&gt;Romance&lt;/genre&gt;
+    &lt;price&gt;4.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-11-02&lt;/publish_date&gt;
+    &lt;description&gt;A deep sea diver finds true love twenty
+            thousand leagues beneath the sea.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk108&quot;&gt;
+    &lt;author&gt;Knorr, Stefan&lt;/author&gt;
+    &lt;title&gt;Creepy Crawlies&lt;/title&gt;
+    &lt;genre&gt;Horror&lt;/genre&gt;
+    &lt;price&gt;4.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-06&lt;/publish_date&gt;
+    &lt;description&gt;An anthology of horror stories about roaches,
+            centipedes, scorpions  and other insects.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk109&quot;&gt;
+    &lt;author&gt;Kress, Peter&lt;/author&gt;
+    &lt;title&gt;Paradox Lost&lt;/title&gt;
+    &lt;genre&gt;Science Fiction&lt;/genre&gt;
+    &lt;price&gt;6.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-11-02&lt;/publish_date&gt;
+    &lt;description&gt;After an inadvertant trip through a Heisenberg
+            Uncertainty Device, James Salway discovers the problems
+            of being quantum.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk110&quot;&gt;
+    &lt;author&gt;O&#39;Brien, Tim&lt;/author&gt;
+    &lt;title&gt;Microsoft .NET: The Programming Bible&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;36.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-09&lt;/publish_date&gt;
+    &lt;description&gt;Microsoft&#39;s .NET initiative is explored in
+            detail in this deep programmer&#39;s reference.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk111&quot;&gt;
+    &lt;author&gt;O&#39;Brien, Tim&lt;/author&gt;
+    &lt;title&gt;MSXML3: A Comprehensive Guide&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;36.95&lt;/price&gt;
+    &lt;publish_date&gt;2000-12-01&lt;/publish_date&gt;
+    &lt;description&gt;The Microsoft MSXML3 parser is covered in
+            detail, with attention to XML DOM interfaces, XSLT processing,
+            SAX and more.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;book id=&quot;bk112&quot;&gt;
+    &lt;author&gt;Galos, Mike&lt;/author&gt;
+    &lt;title&gt;Visual Studio 7: A Comprehensive Guide&lt;/title&gt;
+    &lt;genre&gt;Computer&lt;/genre&gt;
+    &lt;price&gt;49.95&lt;/price&gt;
+    &lt;publish_date&gt;2001-04-16&lt;/publish_date&gt;
+    &lt;description&gt;Microsoft Visual Studio 7 is explored in depth,
+            looking at how Visual Basic, Visual C++, C#, and ASP+ are
+            integrated into a comprehensive development
+            environment.&lt;/description&gt;
+  &lt;/book&gt;
+  &lt;books&gt;
+    &lt;author&gt;Jose Ibarra&lt;/author&gt;
+  &lt;/books&gt;
+&lt;/catalog&gt;
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json convertedXML = sampleXml</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print convertedXML</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.44">20:34:07.262 [print] {
+  &quot;catalog&quot;: {
+    &quot;book&quot;: [
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Gambardella, Matthew&quot;,
+          &quot;title&quot;: &quot;XML Developer&#39;s Guide&quot;,
+          &quot;genre&quot;: &quot;Computer&quot;,
+          &quot;price&quot;: &quot;44.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-10-01&quot;,
+          &quot;description&quot;: &quot;An in-depth look at creating applications with XML.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk101&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Ralls, Kim&quot;,
+          &quot;title&quot;: &quot;Midnight Rain&quot;,
+          &quot;genre&quot;: &quot;Fantasy&quot;,
+          &quot;price&quot;: &quot;5.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-12-16&quot;,
+          &quot;description&quot;: &quot;A former architect battles corporate zombies,\n            an evil sorceress, and her own childhood to become queen\n            of the world.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk102&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Corets, Eva&quot;,
+          &quot;title&quot;: &quot;Maeve Ascendant&quot;,
+          &quot;genre&quot;: &quot;Fantasy&quot;,
+          &quot;price&quot;: &quot;5.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-11-17&quot;,
+          &quot;description&quot;: &quot;After the collapse of a nanotechnology\n            society in England, the young survivors lay the\n            foundation for a new society.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk103&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Corets, Eva&quot;,
+          &quot;title&quot;: &quot;Oberon&#39;s Legacy&quot;,
+          &quot;genre&quot;: &quot;Fantasy&quot;,
+          &quot;price&quot;: &quot;5.95&quot;,
+          &quot;publish_date&quot;: &quot;2001-03-10&quot;,
+          &quot;description&quot;: &quot;In post-apocalypse England, the mysterious\n            agent known only as Oberon helps to create a new life\n            for the inhabitants of London. Sequel to Maeve\n            Ascendant.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk104&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Corets, Eva&quot;,
+          &quot;title&quot;: &quot;The Sundered Grail&quot;,
+          &quot;genre&quot;: &quot;Fantasy&quot;,
+          &quot;price&quot;: &quot;5.95&quot;,
+          &quot;publish_date&quot;: &quot;2001-09-10&quot;,
+          &quot;description&quot;: &quot;The two daughters of Maeve, half-sisters,\n            battle one another for control of England. Sequel to\n            Oberon&#39;s Legacy.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk105&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Randall, Cynthia&quot;,
+          &quot;title&quot;: &quot;Lover Birds&quot;,
+          &quot;genre&quot;: &quot;Romance&quot;,
+          &quot;price&quot;: &quot;4.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-09-02&quot;,
+          &quot;description&quot;: &quot;When Carla meets Paul at an ornithology\n            conference, tempers fly as feathers get ruffled.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk106&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Thurman, Paula&quot;,
+          &quot;title&quot;: &quot;Splish Splash&quot;,
+          &quot;genre&quot;: &quot;Romance&quot;,
+          &quot;price&quot;: &quot;4.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-11-02&quot;,
+          &quot;description&quot;: &quot;A deep sea diver finds true love twenty\n            thousand leagues beneath the sea.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk107&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Knorr, Stefan&quot;,
+          &quot;title&quot;: &quot;Creepy Crawlies&quot;,
+          &quot;genre&quot;: &quot;Horror&quot;,
+          &quot;price&quot;: &quot;4.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-12-06&quot;,
+          &quot;description&quot;: &quot;An anthology of horror stories about roaches,\n            centipedes, scorpions  and other insects.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk108&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Kress, Peter&quot;,
+          &quot;title&quot;: &quot;Paradox Lost&quot;,
+          &quot;genre&quot;: &quot;Science Fiction&quot;,
+          &quot;price&quot;: &quot;6.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-11-02&quot;,
+          &quot;description&quot;: &quot;After an inadvertant trip through a Heisenberg\n            Uncertainty Device, James Salway discovers the problems\n            of being quantum.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk109&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;O&#39;Brien, Tim&quot;,
+          &quot;title&quot;: &quot;Microsoft .NET: The Programming Bible&quot;,
+          &quot;genre&quot;: &quot;Computer&quot;,
+          &quot;price&quot;: &quot;36.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-12-09&quot;,
+          &quot;description&quot;: &quot;Microsoft&#39;s .NET initiative is explored in\n            detail in this deep programmer&#39;s reference.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk110&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;O&#39;Brien, Tim&quot;,
+          &quot;title&quot;: &quot;MSXML3: A Comprehensive Guide&quot;,
+          &quot;genre&quot;: &quot;Computer&quot;,
+          &quot;price&quot;: &quot;36.95&quot;,
+          &quot;publish_date&quot;: &quot;2000-12-01&quot;,
+          &quot;description&quot;: &quot;The Microsoft MSXML3 parser is covered in\n            detail, with attention to XML DOM interfaces, XSLT processing,\n            SAX and more.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk111&quot;
+        }
+      },
+      {
+        &quot;_&quot;: {
+          &quot;author&quot;: &quot;Galos, Mike&quot;,
+          &quot;title&quot;: &quot;Visual Studio 7: A Comprehensive Guide&quot;,
+          &quot;genre&quot;: &quot;Computer&quot;,
+          &quot;price&quot;: &quot;49.95&quot;,
+          &quot;publish_date&quot;: &quot;2001-04-16&quot;,
+          &quot;description&quot;: &quot;Microsoft Visual Studio 7 is explored in depth,\n            looking at how Visual Basic, Visual C++, C#, and ASP+ are\n            integrated into a comprehensive development\n            environment.&quot;
+        },
+        &quot;@&quot;: {
+          &quot;id&quot;: &quot;bk112&quot;
+        }
+      }
+    ],
+    &quot;books&quot;: {
+      &quot;author&quot;: &quot;Jose Ibarra&quot;
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:46]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:46]</span>
+                <span class="scenario-name">Iteration of Response JSON format - simplified - using BC</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>866</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:46]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ENVIRONMENT = env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">20:34:07.271 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ListUsers = call read(&#39;classpath:SamplePackage1/reusableBC/api_list_users.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">810</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.48.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">SamplePackage1.reusableBC.api_list_users</div>
+      </div>
+      <div class="time-cell passed">798</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.48.0.call">
+    <div class="step-container" id="0.48.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url p_base_url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.48.0.call">
+    <div class="step-container" id="0.48.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.48.0.call">
+    <div class="step-container" id="0.48.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param page = 2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.48.0.call">
+    <div class="step-container" id="0.48.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">794</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.48.0.call.0.20">20:34:07.589 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:34:08.079 response time in milliseconds: 488
+1 &lt; 200
+1 &lt; Date: Wed, 10 Aug 2022 12:34:04 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 6016
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=06B4WF%2FCu8uEwIn8RGGv5QRNyFDvdlc8ElF30HTEMn1s%2BL8HNroxglnbuoaQIAUPDy9mjkAAkyA67oZmbhbpBRkCAXI6JYfJP7tUXmjErvMjsIJUroLX%2BbIG7g%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7388c3788f07af60-NRT
+{&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:7,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;last_name&quot;:&quot;Lawson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/7-image.jpg&quot;},{&quot;id&quot;:8,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/8-image.jpg&quot;},{&quot;id&quot;:9,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;last_name&quot;:&quot;Funke&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/9-image.jpg&quot;},{&quot;id&quot;:10,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;last_name&quot;:&quot;Fields&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/10-image.jpg&quot;},{&quot;id&quot;:11,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Edwards&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/11-image.jpg&quot;},{&quot;id&quot;:12,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;last_name&quot;:&quot;Howell&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/12-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.48.0.call">
+    <div class="step-container" id="0.48.0.call.0.22">
+      <div class="step-ref passed">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timeRespond = responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.48.0.call">
+    <div class="step-container" id="0.48.0.call.0.23">
+      <div class="step-ref passed">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print timeRespond</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.48.0.call.0.23">20:34:08.083 [print] 488 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ListUsers.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">20:34:08.085 [print] {
+  &quot;page&quot;: 2,
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;total_pages&quot;: 2,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 7,
+      &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Michael&quot;,
+      &quot;last_name&quot;: &quot;Lawson&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 8,
+      &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Lindsay&quot;,
+      &quot;last_name&quot;: &quot;Ferguson&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 9,
+      &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Tobias&quot;,
+      &quot;last_name&quot;: &quot;Funke&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 10,
+      &quot;email&quot;: &quot;byron.fields@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Byron&quot;,
+      &quot;last_name&quot;: &quot;Fields&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 11,
+      &quot;email&quot;: &quot;george.edwards@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;George&quot;,
+      &quot;last_name&quot;: &quot;Edwards&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;
+    },
+    {
+      &quot;id&quot;: 12,
+      &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;,
+      &quot;first_name&quot;: &quot;Rachel&quot;,
+      &quot;last_name&quot;: &quot;Howell&quot;,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;
+    }
+  ],
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Iteration_result = call read(&#39;classpath:SamplePackage1/reusableBC/Activity_4_helper/Iteration_feature.feature&#39;) ListUsers.response.data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">51</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.50.1.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[0]SamplePackage1.reusableBC.Activity_4_helper.Iteration_feature</div>
+      </div>
+      <div class="time-cell passed">3</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.1.call">
+    <div class="step-container" id="0.50.1.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.1.call.0.5">20:34:08.095 [print] michael.lawson@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.1.call">
+    <div class="step-container" id="0.50.1.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.1.call.0.6">20:34:08.097 [print] Michael 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.50.2.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[1]SamplePackage1.reusableBC.Activity_4_helper.Iteration_feature</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.2.call">
+    <div class="step-container" id="0.50.2.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.2.call.0.5">20:34:08.105 [print] lindsay.ferguson@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.2.call">
+    <div class="step-container" id="0.50.2.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.2.call.0.6">20:34:08.106 [print] Lindsay 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.50.3.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[2]SamplePackage1.reusableBC.Activity_4_helper.Iteration_feature</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.3.call">
+    <div class="step-container" id="0.50.3.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.3.call.0.5">20:34:08.112 [print] tobias.funke@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.3.call">
+    <div class="step-container" id="0.50.3.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.3.call.0.6">20:34:08.113 [print] Tobias 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.50.4.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[3]SamplePackage1.reusableBC.Activity_4_helper.Iteration_feature</div>
+      </div>
+      <div class="time-cell passed">1</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.4.call">
+    <div class="step-container" id="0.50.4.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.4.call.0.5">20:34:08.120 [print] byron.fields@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.4.call">
+    <div class="step-container" id="0.50.4.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.4.call.0.6">20:34:08.121 [print] Byron 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.50.5.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[4]SamplePackage1.reusableBC.Activity_4_helper.Iteration_feature</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.5.call">
+    <div class="step-container" id="0.50.5.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.5.call.0.5">20:34:08.128 [print] george.edwards@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.5.call">
+    <div class="step-container" id="0.50.5.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.5.call.0.6">20:34:08.129 [print] George 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.50.6.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[5]SamplePackage1.reusableBC.Activity_4_helper.Iteration_feature</div>
+      </div>
+      <div class="time-cell passed">1</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.6.call">
+    <div class="step-container" id="0.50.6.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.6.call.0.5">20:34:08.135 [print] rachel.howell@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.50.6.call">
+    <div class="step-container" id="0.50.6.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50.6.call.0.6">20:34:08.136 [print] Rachel 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Iteration_result</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.51">20:34:08.139 [print] [
+  {
+    &quot;last_name&quot;: &quot;Lawson&quot;,
+    &quot;id&quot;: 7,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Michael&quot;,
+    &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Ferguson&quot;,
+    &quot;id&quot;: 8,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Lindsay&quot;,
+    &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Funke&quot;,
+    &quot;id&quot;: 9,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Tobias&quot;,
+    &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Fields&quot;,
+    &quot;id&quot;: 10,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Byron&quot;,
+    &quot;email&quot;: &quot;byron.fields@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Edwards&quot;,
+    &quot;id&quot;: 11,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;George&quot;,
+    &quot;email&quot;: &quot;george.edwards@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Howell&quot;,
+    &quot;id&quot;: 12,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Rachel&quot;,
+    &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:53]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:53]</span>
+                <span class="scenario-name">Iteration of Response JSON format - simplified - NOT using BC</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>331</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:53]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:53]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ENVIRONMENT = env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">20:34:08.145 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;api/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>param page = 2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">287</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.58">20:34:08.153 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:34:08.437 response time in milliseconds: 284
+1 &lt; 200
+1 &lt; Date: Wed, 10 Aug 2022 12:34:04 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 2416
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=GTSa22B5nKRPWc4TrDBObl%2FfsV1s2krSzB964n%2BY%2Fb14ygpIrUjSNKZb7EmbXTiJUl13du4P5vYAX5Z4weNvUpkBKRW0a7DWX4kdP4rHjyDL1qaWS3i80bqYIg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7388c37aefce8a4e-NRT
+{&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:7,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;last_name&quot;:&quot;Lawson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/7-image.jpg&quot;},{&quot;id&quot;:8,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/8-image.jpg&quot;},{&quot;id&quot;:9,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;last_name&quot;:&quot;Funke&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/9-image.jpg&quot;},{&quot;id&quot;:10,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;last_name&quot;:&quot;Fields&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/10-image.jpg&quot;},{&quot;id&quot;:11,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Edwards&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/11-image.jpg&quot;},{&quot;id&quot;:12,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;last_name&quot;:&quot;Howell&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/12-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Iteration_result = call read(&#39;classpath:SamplePackage1/reusableBC/Activity_4_helper/Iteration_feature.feature&#39;) response.data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">39</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.60.1.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[0]SamplePackage1.reusableBC.Activity_4_helper.Iteration_feature</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.60.1.call">
+    <div class="step-container" id="0.60.1.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60.1.call.0.5">20:34:08.446 [print] michael.lawson@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.60.1.call">
+    <div class="step-container" id="0.60.1.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60.1.call.0.6">20:34:08.447 [print] Michael 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.60.2.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[1]SamplePackage1.reusableBC.Activity_4_helper.Iteration_feature</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.60.2.call">
+    <div class="step-container" id="0.60.2.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60.2.call.0.5">20:34:08.452 [print] lindsay.ferguson@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.60.2.call">
+    <div class="step-container" id="0.60.2.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60.2.call.0.6">20:34:08.452 [print] Lindsay 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.60.3.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[2]SamplePackage1.reusableBC.Activity_4_helper.Iteration_feature</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.60.3.call">
+    <div class="step-container" id="0.60.3.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60.3.call.0.5">20:34:08.457 [print] tobias.funke@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.60.3.call">
+    <div class="step-container" id="0.60.3.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60.3.call.0.6">20:34:08.458 [print] Tobias 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.60.4.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[3]SamplePackage1.reusableBC.Activity_4_helper.Iteration_feature</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.60.4.call">
+    <div class="step-container" id="0.60.4.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60.4.call.0.5">20:34:08.463 [print] byron.fields@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.60.4.call">
+    <div class="step-container" id="0.60.4.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60.4.call.0.6">20:34:08.464 [print] Byron 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.60.5.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[4]SamplePackage1.reusableBC.Activity_4_helper.Iteration_feature</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.60.5.call">
+    <div class="step-container" id="0.60.5.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60.5.call.0.5">20:34:08.470 [print] george.edwards@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.60.5.call">
+    <div class="step-container" id="0.60.5.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60.5.call.0.6">20:34:08.471 [print] George 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.60.6.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[5]SamplePackage1.reusableBC.Activity_4_helper.Iteration_feature</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.60.6.call">
+    <div class="step-container" id="0.60.6.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60.6.call.0.5">20:34:08.476 [print] rachel.howell@reqres.in 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.60.6.call">
+    <div class="step-container" id="0.60.6.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60.6.call.0.6">20:34:08.477 [print] Rachel 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Iteration_result</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.61">20:34:08.479 [print] [
+  {
+    &quot;last_name&quot;: &quot;Lawson&quot;,
+    &quot;id&quot;: 7,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Michael&quot;,
+    &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Ferguson&quot;,
+    &quot;id&quot;: 8,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Lindsay&quot;,
+    &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Funke&quot;,
+    &quot;id&quot;: 9,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Tobias&quot;,
+    &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Fields&quot;,
+    &quot;id&quot;: 10,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Byron&quot;,
+    &quot;email&quot;: &quot;byron.fields@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Edwards&quot;,
+    &quot;id&quot;: 11,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;George&quot;,
+    &quot;email&quot;: &quot;george.edwards@reqres.in&quot;
+  },
+  {
+    &quot;last_name&quot;: &quot;Howell&quot;,
+    &quot;id&quot;: 12,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Rachel&quot;,
+    &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:63]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:63]</span>
+                <span class="scenario-name">Read Java files / data generator, Static Java Functions</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>289</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:63]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ENVIRONMENT = env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">20:34:08.486 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def datagenerator = Java.type(&#39;SamplePackage1.reusableBC.Activity_4_helper.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = datagenerator.getRandomEmail()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">197</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomUsername = datagenerator.getRandomUserName()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">70</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print randomEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.68">20:34:08.773 [print] zora57@test.com 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print randomUsername</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.69">20:34:08.777 [print] ammie.moen 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:72]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:72]</span>
+                <span class="scenario-name">Read Java files / calling Static and Non-Static Java functions</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>52</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:72]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:72]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ENVIRONMENT = env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">20:34:08.787 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def java_class = Java.type(&#39;SamplePackage1.reusableBC.Activity_4_helper.javaDemo&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def nonStaticFunc_1 = new java_class().non_static_void_function()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print nonStaticFunc_1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.77">20:34:08.808 [print] null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def nonStaticFunc_2 =  new java_class().stringArgs_NON_static_function(&quot;PHILIPPINES!&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print nonStaticFunc_2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.80">20:34:08.814 [print] Hello PHILIPPINES! 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match nonStaticFunc_2 == &quot;Hello PHILIPPINES!&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def StaticFunc1 = java_class.static_void_function()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print StaticFunc1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.84">20:34:08.836 [print] null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def StaticFunc2 = java_class.stringArgs_static_function(&quot;EVERYONE!&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print StaticFunc2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.87">20:34:08.842 [print] Welcome EVERYONE! 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match StaticFunc2 == &quot;Welcome EVERYONE!&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

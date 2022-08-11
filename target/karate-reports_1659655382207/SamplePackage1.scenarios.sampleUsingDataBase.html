@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>SamplePackage1.scenarios.sampleUsingDataBase</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-12-01 05:40:13 am</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:13]"><span>[1:13]</span> <span>Scenario using database</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">SamplePackage1/scenarios/sampleUsingDataBase.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Feature connection to Database sampleUsingDataBase.feature</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:13]</span>
+                <span class="scenario-name">Scenario using database</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2535</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># data generator</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;Helpers.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">36</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">05:40:10.972 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># use jdbc</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = {username: &#39;postgres&#39;, password: &#39;acernitro5&#39;, url: &#39;jdbc:postgresql://localhost:5432/uni_students&#39;, driverClassName: &#39;org.postgresql.Driver&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">223</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def DbUtils = Java.type(&#39;DBUtils.DbUtils&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def db = new DbUtils(config)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">252</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def student = db.readRows(&#39;SELECT * FROM tableone&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">503</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Students are --- &#39;, student</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">05:40:12.143 [print] Students are ---  [
+  {
+    &quot;userid&quot;: 1,
+    &quot;username&quot;: &quot;Renz&quot;,
+    &quot;usercourse&quot;: &quot;BS Mech Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  },
+  {
+    &quot;userid&quot;: 2,
+    &quot;username&quot;: &quot;Dominic&quot;,
+    &quot;usercourse&quot;: &quot;BS Electr Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  },
+  {
+    &quot;userid&quot;: 3,
+    &quot;username&quot;: &quot;Redmonz&quot;,
+    &quot;usercourse&quot;: &quot;BS Civil Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  },
+  {
+    &quot;userid&quot;: 4,
+    &quot;username&quot;: &quot;Kalvin&quot;,
+    &quot;usercourse&quot;: &quot;BS Civil Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  },
+  {
+    &quot;userid&quot;: 5,
+    &quot;username&quot;: &quot;Kale&quot;,
+    &quot;usercourse&quot;: &quot;BS Electronics Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  },
+  {
+    &quot;userid&quot;: 6,
+    &quot;username&quot;: &quot;Roja&quot;,
+    &quot;usercourse&quot;: &quot;BS Chemical Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  },
+  {
+    &quot;userid&quot;: 7,
+    &quot;username&quot;: &quot;Lala&quot;,
+    &quot;usercourse&quot;: &quot;BS Sanitary Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  },
+  {
+    &quot;userid&quot;: 8,
+    &quot;username&quot;: &quot;Dhand&quot;,
+    &quot;usercourse&quot;: &quot;BS Mech Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  },
+  {
+    &quot;userid&quot;: 9,
+    &quot;username&quot;: &quot;Dhand&quot;,
+    &quot;usercourse&quot;: &quot;BS Mech Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  },
+  {
+    &quot;userid&quot;: 20,
+    &quot;username&quot;: &quot;#(randomUsername)&quot;,
+    &quot;usercourse&quot;: &quot;BS Mech Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  },
+  {
+    &quot;userid&quot;: 18,
+    &quot;username&quot;: &quot;Tim&quot;,
+    &quot;usercourse&quot;: &quot;BS Mech Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  },
+  {
+    &quot;userid&quot;: 34,
+    &quot;username&quot;: &quot;Tim&quot;,
+    &quot;usercourse&quot;: &quot;BS Mech Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  },
+  {
+    &quot;userid&quot;: 56,
+    &quot;username&quot;: &quot;Pol&quot;,
+    &quot;usercourse&quot;: &quot;BS Mech Eng&quot;,
+    &quot;userstream&quot;: &quot;Engineering&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print student[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">05:40:12.143 [print] {
+  &quot;userid&quot;: 1,
+  &quot;username&quot;: &quot;Renz&quot;,
+  &quot;usercourse&quot;: &quot;BS Mech Eng&quot;,
+  &quot;userstream&quot;: &quot;Engineering&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print student[0].username</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">05:40:12.143 [print] Renz 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def student1Username = db.readRows(&#39;SELECT username FROM tableone WHERE userid = 1;&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">61</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print student1Username</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">05:40:12.221 [print] [
+  {
+    &quot;username&quot;: &quot;Renz&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def student1ID = db.readValue(&quot;SELECT userid FROM tableone WHERE username = &#39;Renz&#39;;&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">279</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print student1ID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">05:40:12.498 [print] 1 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def student1IDs = db.readRow(&quot;SELECT userid FROM tableone WHERE username = &#39;Renz&#39;;&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">73</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print student1IDs</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">05:40:12.580 [print] {
+  &quot;userid&quot;: 1
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomID = dataGenerator.getRandomID()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">53</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print randomID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">05:40:12.627 [print] 98872 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># userid cannot duplicate, change it all the time before run again</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref failed">32</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def write = db.insertRows(&quot;INSERT INTO tableone (userid, username, usercourse, userstream) VALUES (56, &#39;Pol&#39;, &#39;BS Mech Eng&#39;, &#39;Engineering&#39;);&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">997</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">05:40:13.635 classpath:SamplePackage1/scenarios/sampleUsingDataBase.feature:32
+* def write = db.insertRows(&quot;INSERT INTO tableone (userid, username, usercourse, userstream) VALUES (56, &#39;Pol&#39;, &#39;BS Mech Eng&#39;, &#39;Engineering&#39;);&quot;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: db.insertRows(&quot;INSERT INTO tableone (userid, username, usercourse, userstream) VALUES (56, &#39;Pol&#39;, &#39;BS Mech Eng&#39;, &#39;Engineering&#39;);&quot;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: StatementCallback; SQL [INSERT INTO tableone (userid, username, usercourse, userstream) VALUES (56, &#39;Pol&#39;, &#39;BS Mech Eng&#39;, &#39;Engineering&#39;);]; ERROR: duplicate key value violates unique constraint &quot;tableone_pkey&quot;
+  Detail: Key (userid)=(56) already exists.; nested exception is org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint &quot;tableone_pkey&quot;
+  Detail: Key (userid)=(56) already exists.
+- org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
+- org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+- org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541)
+- org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393)
+- org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:625)
+- DBUtils.DbUtils.insertRows(DbUtils.java:48)
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:SamplePackage1/scenarios/sampleUsingDataBase.feature:32
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref skipped">33</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def updatedTableone = db.readRows(&#39;SELECT * FROM tableone&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref skipped">34</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print updatedTableone</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

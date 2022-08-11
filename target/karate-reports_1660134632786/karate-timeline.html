@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[1:9]","start":1660134583995,"end":1660134584327,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[1:9] 20:29:43.995-20:29:44.327 Read json's files - Using * def + varName"},{"id":2,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[2:20]","start":1660134584335,"end":1660134584350,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[2:20] 20:29:44.335-20:29:44.350 Read json's files - Using * json + varName"},{"id":3,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[3:30]","start":1660134584359,"end":1660134584556,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[3:30] 20:29:44.359-20:29:44.556 Read XML files \/ converting format"},{"id":4,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[4:38]","start":1660134584564,"end":1660134584590,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[4:38] 20:29:44.564-20:29:44.590 Read XML files \/ DIRECT convert"},{"id":5,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[5:46]","start":1660134584598,"end":1660134585473,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[5:46] 20:29:44.598-20:29:45.473 Iteration of Response JSON format - simplified - using BC"},{"id":6,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[6:53]","start":1660134585480,"end":1660134585802,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[6:53] 20:29:45.480-20:29:45.802 Iteration of Response JSON format - simplified - NOT using BC"},{"id":7,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[7:63]","start":1660134585809,"end":1660134586030,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[7:63] 20:29:45.809-20:29:46.030 Read Java files \/ data generator, Static Java Functions","className":"failed"},{"id":8,"group":1,"content":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[8:72]","start":1660134586035,"end":1660134586064,"title":"src\/test\/java\/SamplePackage1\/scenarios\/Activity_4\/reading_different_file_formats[8:72] 20:29:46.035-20:29:46.064 Read Java files \/ calling Static and Non-Static Java functions"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
